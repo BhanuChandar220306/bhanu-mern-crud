@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
     origin: [
-        "https://full-stack-development-3gr1d4cuf-csp-ddd1.vercel.app"
+        "https://bhanu-react-html-rendering.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"]
@@ -28,7 +28,7 @@ const dbName = process.env.DB_NAME;
 // Connect to MongoDB
 const connectDB = async () => {
     try {
-        await mongoose.connect(process.env.MONGO_URI, {
+        await mongoose.connect(process.env.MONGO_URL, {
             dbName: process.env.DB_NAME
         });
 
