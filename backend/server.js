@@ -125,3 +125,6 @@ app.get("/", (req, res) => {
 });
 */
 connectDB();
+console.log("MONGO_URI exists:", !!process.env.MONGO_URI);
+console.log("MONGO_URL exists:", !!process.env.MONGO_URL);
+console.log("DB_NAME exists:", !!process.env.DB_NAME);
